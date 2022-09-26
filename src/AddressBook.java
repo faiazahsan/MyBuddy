@@ -12,6 +12,10 @@ public class AddressBook{
         this.buddies.add(buddy);
     }
 
+    public void greetBuddy(BuddyInfo buddy){
+        System.out.println("Hey! " + buddy);
+    }
+
     public BuddyInfo removeBuddy(int index){
         if(index >=0 && index < buddies.size()){
             return buddies.remove(index);
